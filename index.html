@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="Logo.jpg" alt="Kebab Lezat Logo" class="logo-img">
+            
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Pesan Sekarang</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Selamat Datang di Website Kebab lezat</h2>
+            <p>Makanan lezat dengan pelayanan terbaik untuk Anda!</p>
+            <button onclick="scrollToMenu()">Lihat Menu</button>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2 class="section-title">Menu Makanan</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="ayam.png" alt="Burger">
+                <h3>Kebab Ayam</h3>
+                <p>Rp 18.000 - Isi: Ayam panggang, selada, tomat, keju, dan saus bawang putih.</p>
+            </div>
+            <div class="menu-item">
+                <img src="sapi.png" alt="Pizza">
+                <h3>Kebab Sapi</h3>
+                <p>Rp 20.000 - Daging sapi panggang, sayuran segar, keju, dan saus khas.</p>
+            </div>
+            <div class="menu-item">
+                <img src="sayur.jpg" alt="Pasta">
+                <h3>Kebab Sayuran</h3>
+                <p>Rp 15.000 - Sayuran segar, falafel, hummus, dan saus tahini.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order">
+        <h2 class="section-title">Pesan Makanan Anda</h2>
+        <form id="order-form">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" placeholder="Nama lengkap" required>
+
+            <label for="menu-item">Pilih Menu:</label>
+            <select id="menu-item">
+                <option value="Kebab Sayuran">Kebab Sayuran</option>
+                <option value="Kebab Ayam">Kebab Ayam</option>
+                <option value="Kebab Sapi">Kebab Sapi</option>
+            </select>
+
+            <label for="quantity">Jumlah:</label>
+            <input type="number" id="quantity" min="1" value="1" required>
+
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Kontak Kami</h2>
+        <p>Email: <a href="mailto:toramtax12@gmail.com">toramtax12@gmail.com</a></p>
+        <p>Telepon: <a href="tel:+6288223881917">088223881917</a></p>
+        <p>WhatsApp: <a href="https://wa.link/z4t776" target="_blank">Chat with us on WhatsApp</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/kebab_lezat_/" target="_blank">@kebab_lezat_</a></p>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Jualan Sederhana. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
